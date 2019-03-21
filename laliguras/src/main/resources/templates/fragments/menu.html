@@ -1,0 +1,52 @@
+<div xmlns:th="http://www.w3.org/1999/xhtml" th:fragment="menu">
+    <script src="/webjars/jquery/3.3.1-1/jquery.js"></script>
+    <script src="/js/js-for-menu.js"></script>
+    <!-- <ul class="nav justify-content-center">
+         <li class="nav-item">
+             <a id="user" class="nav-link active" onclick="loadPage(this)" href="#">User</a>
+         </li>
+         <li class="nav-item">
+             <a id="batch" class="nav-link" onclick="loadPage(this)" href="#">Batch</a>
+         </li>
+         <li class="nav-item">
+             <a id="report" class="nav-link" onclick="loadPage(this)" href="#">Report</a>
+         </li>
+         <li class="nav-item">
+             <a id="material" class="nav-link" onclick="loadPage(this)" href="#">Material</a>
+         </li>
+     </ul>-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand inactiveLink" href="#"><em>Menu</em></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a id="user" class="nav-link active" onclick="loadPage(this)" href="#">User</a>
+                </li>
+                <li class="nav-item">
+                    <a id="batch" class="nav-link" onclick="loadPage(this)" href="#">Batch</a>
+                </li>
+                <li class="nav-item">
+                    <a id="report" class="nav-link" onclick="loadPage(this)" href="#">Report</a>
+                </li>
+                <li class="nav-item">
+                    <a id="material" class="nav-link" onclick="loadPage(this)" href="#">Material</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Setting
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Change Password</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
